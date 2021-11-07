@@ -1,0 +1,306 @@
+/*
+-- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 44 / 52 / 62 / 74 / 86 / 98 
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+-- 02 COLOURS
+
+Primary: #003b59
+
+- Tints:
+- Shades:
+- Accent:
+- Greys: #555 #333 #888 #767676
+
+-- 05 SHADOWS
+
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+-- 06 BORDER RADIUS
+
+Default: 9px
+11px
+
+*/
+
+/***************************************/
+/* General styles */
+/***************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+html {
+  font-size: 10px;
+}
+
+.container {
+  padding: 3.2rem 9.6rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  column-gap: 6.4rem;
+}
+
+/***************************************/
+/* Top bar */
+/***************************************/
+
+.top-bar p {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #555;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+#DigitalCLOCK {
+  position: relative;
+  font-size: 1.6rem;
+}
+
+/***************************************/
+/* Header */
+/***************************************/
+
+.header-logo {
+  height: 6.4rem;
+}
+
+.header {
+  padding: 1.6rem 9.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003b59;
+}
+
+.main-nav {
+  display: flex;
+  gap: 2.4rem;
+}
+
+.main-nav a:link,
+.main-nav a:visited {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 1.8rem;
+  color: #eee;
+  transition: all 0.3s ease-in-out;
+  padding: 1.6rem;
+  font-weight: 400;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+  transform: scale(1.2);
+}
+
+/***************************************/
+/* Blog section */
+/***************************************/
+
+.blog-sec {
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 6.4rem;
+  column-gap: 3.2rem;
+  height: 100vh;
+  overflow: scroll;
+  -webkit-scrollbar-width: none;
+  scrollbar-width: none;
+}
+
+#DigitalCLOCK::before {
+  bottom: -5rem;
+  transform: translateX(35%);
+  right: 50%;
+  position: absolute;
+  content: "Scroll for more ⬇️";
+  z-index: 5;
+}
+
+.post-img {
+  object-fit: cover;
+  width: 100%;
+  height: 35rem;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2.4rem;
+  gap: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.post-heading {
+  height: 8rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: #eee;
+}
+
+.author,
+.read-more {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 0.6rem 1.6rem;
+  font-weight: bold;
+}
+
+.author {
+  background-color: #99b1bd;
+}
+
+.read-more:link,
+.read-more:visited {
+  text-decoration: none;
+  background-color: #1a4f6a;
+  color: #eee;
+  transition: all 0.3s ease-in-out;
+}
+
+.read-more:hover,
+.read-more:active {
+  background-color: #fff;
+  box-shadow: inset 0 0 0 3px #1a4f6a;
+  color: #1a4f6a;
+}
+
+article {
+  width: 90%;
+  justify-self: center;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  height: 35rem;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.post-text-box {
+  padding: 0.6rem 2.4rem 2.4rem 2.4rem;
+  transform: translateY(-9rem);
+  background-color: rgba(51, 51, 51, 0.425);
+  transition: all 0.3s ease-in-out;
+}
+
+article:hover .post-text-box {
+  transform: translateY(-22rem);
+  background-color: rgba(51, 51, 51, 0.596);
+}
+
+article:hover .post-img {
+  filter: blur(0.2rem);
+}
+
+/***************************************/
+/* Aside section */
+/***************************************/
+
+.section-side {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  overflow: scroll;
+  -webkit-scrollbar-width: none;
+  scrollbar-width: none;
+}
+
+.navigation-secondary {
+  position: relative;
+  display: flex;
+  margin-right: ;
+  justify-content: space-around;
+  align-items: center;
+  align-self: start;
+  margin-bottom: 4.8rem;
+}
+
+.navigation-secondary::before {
+  bottom: -5rem;
+  transform: translateX(50%);
+  right: 50%;
+  position: absolute;
+  content: "Scroll for more ⬇️";
+  z-index: 5;
+}
+
+.btn-aside {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 0.6rem 1.6rem;
+  border-bottom: 5px solid #1a4f6a;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-aside:hover,
+.btn-aside:active {
+  background-color: #1a4f6a;
+  color: #eee;
+}
+
+.aside-element {
+  align-self: start;
+  text-decoration: none;
+  list-style: none;
+}
+
+.aside-element a {
+  text-decoration: none;
+}
+
+.aside-heading {
+  color: #555;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.aside-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3.2rem;
+}
+
+#sec-1 {
+  display: block;
+}
+
+#sec-2 {
+  display: none;
+}
+
+.active {
+  display: block;
+}
