@@ -35,11 +35,52 @@ function showTime() {
   m = m < 10 ? "0" + m : m;
   s = s < 10 ? "0" + s : s;
 
-  var time = "Its " + h + ":" + m + ":" + s + " " + session;
+  var time = h + ":" + m + ":" + s;
+  var se = session;
   document.getElementById("DigitalCLOCK").innerText = time;
   document.getElementById("DigitalCLOCK").textContent = time;
+  document.getElementById("session").innerText = session;
 
   setTimeout(showTime, 1000);
 }
 
 showTime();
+
+// Time and date widget
+
+function dayNum() {
+  let d = new Date();
+  let date = d.getDate();
+  let day = d.getDay();
+  let year = d.getFullYear();
+
+  switch (day) {
+    case 0:
+      day = "Sunday";
+      break;
+    case 1:
+      day = "Monday";
+      break;
+    case 2:
+      day = "Tuesday";
+      break;
+    case 3:
+      day = "Wednesday";
+      break;
+    case 4:
+      day = "Thursday";
+      break;
+    case 5:
+      day = "Friday";
+      break;
+    case 6:
+      day = "Saturday";
+      break;
+  }
+
+  document.getElementById("day-num").textContent = date;
+  document.getElementById("day").textContent = day;
+  document.getElementById("year").textContent = year;
+}
+
+dayNum();
