@@ -184,6 +184,7 @@ li {
 .blog {
   padding: 9.6rem;
   display: grid;
+  row-gap: 9.6rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -200,6 +201,7 @@ li {
 .post-img-box {
   height: 20rem;
   overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 
 .post-img {
@@ -210,6 +212,7 @@ li {
 
 .post-text-box {
   padding: 2.4rem;
+  height: 15rem;
 }
 
 .post-heading {
@@ -221,4 +224,38 @@ li {
 .author {
   font-weight: 500;
   font-size: 1.6rem;
+  margin-bottom: 4.8rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.post-para {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.row {
+  transform-origin: center;
+  transition: all 1s ease-in-out;
+  transform: scale(0);
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.blog-post:hover .post-img-box {
+  height: 0;
+  transform: scale(0);
+}
+
+.blog-post:hover .post-para {
+  transform: scale(1);
+}
+
+.blog-post:hover .row {
+  transform: scale(1);
+}
+
+.blog-post:hover .author {
+  margin-bottom: 3.4rem;
 }
