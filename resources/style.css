@@ -27,7 +27,7 @@ Paragraph default: 1.6
 
 Primary: #003b59
 
-- Tints:
+- Tints: #4d768b #e6ebee
 - Shades:
 - Accent:
 - Greys: #555 #333 #888 #767676
@@ -70,17 +70,22 @@ li {
 /* /////////////////////// */
 
 .header {
-  padding: 2.4rem 1.6rem;
+  height: 6rem;
+  transition: all 0.3s ease-in-out;
+  padding: 0.8rem 4.8rem;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 }
 
 .logo {
-  height: 5rem;
+  height: 4rem;
+  justify-self: left;
 }
 
 .main-nav {
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nav-container {
@@ -93,7 +98,8 @@ li {
 
 .nav-element:link,
 .nav-element:visited {
-  padding: 1.6rem;
+  text-transform: uppercase;
+  padding: 0.8rem;
   font-size: 1.8rem;
   font-weight: 600;
   display: block;
@@ -106,6 +112,31 @@ li {
 .nav-element:active {
   scale: 1.2;
   color: #4d768b;
+}
+
+.social {
+  justify-self: right;
+}
+
+.navv {
+  justify-self: center;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  padding: 1.2rem;
+  bottom: 0;
+  height: 6rem;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.04);
+  background-color: #e6ebee;
+}
+
+.sticky .hero {
+  margin-top: 6.8rem;
 }
 
 /* /////////////////////// */
@@ -134,11 +165,13 @@ li {
 }
 
 .hero-text-box {
+  width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 1.6rem;
-  width: 40rem;
+  margin-right: 1rem;
+  /* width: 40rem; */
   height: 100%;
   font-size: 3rem;
   background-color: rgba(51, 51, 51, 0.24);
@@ -182,7 +215,7 @@ li {
 /* /////////////////////// */
 
 .blog {
-  padding: 9.6rem;
+  padding: 9.6rem 4.8rem;
   display: grid;
   row-gap: 9.6rem;
   grid-template-columns: repeat(3, 1fr);
@@ -258,4 +291,129 @@ li {
 
 .blog-post:hover .author {
   margin-bottom: 3.4rem;
+}
+
+/* /////////////////////// */
+/* ABOUT SECTION */
+/* /////////////////////// */
+
+.about {
+  padding: 1.2rem 9.6rem;
+}
+
+.abt-container {
+  padding: 4.8rem 0;
+  border-radius: 11px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 9.6rem;
+}
+
+.sec-heading {
+  color: #4d768b;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 2.4rem;
+}
+
+.about-text-box,
+.about-img-box {
+  display: grid;
+  padding: 4.8rem;
+}
+
+.abt-logo {
+  width: 60%;
+  justify-self: center;
+  align-self: center;
+}
+
+.about-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  justify-self: center;
+  align-self: center;
+}
+
+/* /////////////////////// */
+/* WORK SECTION */
+/* /////////////////////// */
+
+.work {
+  padding: 1.2rem 9.6rem;
+}
+
+.work-container {
+  padding: 4.8rem 0;
+  border-radius: 11px;
+  display: grid;
+  grid-template-columns: 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 9.6rem;
+}
+
+.work-text {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #555;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 2.4rem;
+}
+
+.work-sub-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  justify-self: center;
+  align-self: center;
+}
+
+/* /////////////////////// */
+/* FOOTER */
+/* /////////////////////// */
+
+.footer {
+  padding: 9.6rem;
+  border-top: 2px solid rgba(85, 85, 85, 0.219);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-item {
+  justify-self: center;
+  text-align: center;
+}
+
+.footer-heading {
+  margin-bottom: auto;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2.4rem;
+}
+
+.contri {
+  margin-top: auto;
+  list-style: none;
+  text-decoration: none;
+  line-height: 1.8;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.footer a {
+  transition: all 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  transform: scale(1.2);
+}
+
+footer a:link,
+footer a:visited {
+  text-decoration: none;
 }

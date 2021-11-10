@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./resources/img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      href="./resources/img/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/resources/img/favicon/site.webmanifest" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -31,10 +37,27 @@
             alt="website logo"
           />
         </a>
-        <ul class="nav-container">
-          <li><a href="" class="nav-element">Home</a></li>
-          <li><a href="" class="nav-element">About</a></li>
-          <li><a href="" class="nav-element">Work with me</a></li>
+        <ul class="nav-container navv">
+          <li><a href="#" class="nav-element">Home</a></li>
+          <li><a href="#abt" class="nav-element">About</a></li>
+          <li><a href="#wrk" class="nav-element">Work with us</a></li>
+        </ul>
+        <ul class="nav-container social">
+          <li>
+            <a href="#" class="nav-element">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-element">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-element">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -218,7 +241,90 @@
           </div>
         </atricle>
       </section>
+      <section id="abt" class="about">
+        <h2 class="sec-heading">About Us</h2>
+        <div class="abt-container">
+          <div class="about-img-box">
+            <img
+              class="abt-logo"
+              src="./resources/img/logos/whole logo.png"
+              alt="website logo"
+            />
+          </div>
+          <div class="about-text-box">
+            <p class="about-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus officia minus nesciunt neque expedita tenetur ad
+              asperiores temporibus repellendus consequatur. Laudantium eveniet
+              ab esse hic in fuga, labore veritatis odit?
+              <br />
+              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              aut quidem tempora exercitationem asperiores non tempore rem
+              eveniet a eos modi est dignissimos nulla, velit, amet veritatis.
+              Ex, id atque.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="wrk" class="work">
+        <h2 class="sec-heading">Work With Us</h2>
+        <div class="work-container">
+          <h3 class="work-text">Coming soon</h3>
+          <p class="work-sub-text">
+            We will be open to work soon as we start accepting projects stay
+            tuned.
+          </p>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-item">
+          <a href="#"
+            ><img
+              src="./resources/img/logos/whole logo-main.png"
+              class="logo"
+              alt="website logo"
+            />
+          </a>
+          <br />
+          <br />
+          <ul class="contri">
+            <li>A place where geeks hangout</li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-heading">Contributors</h4>
+          <ul class="contri">
+            <li>Animesh</li>
+            <li>Apoorva</li>
+            <li>Ashutosh</li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="contri">
+            <li><a href="tel:415-201-6370">415-201-6370</a></li>
+            <li>
+              <a href="mailto:call@shuttle.com">mailto:call@shuttle.com</a>
+            </li>
+            <li>
+              500, lane 34 Brooklyn St.,<br />
+              United States, CA 20034
+            </li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h4 class="footer-heading">Links</h4>
+          <ul class="contri">
+            <li><a href="#">Home</a></li>
+            <li><a href="#abt">About us</a></li>
+            <li><a href="#wrk">Work with us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script defer src="./resources/script.js"></script>
   </body>
 </html>
