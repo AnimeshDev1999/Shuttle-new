@@ -129,3 +129,9 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+
+//Mobile navigation
+const navEl = document.querySelector(".navv");
+function mobOpen() {
+  navEl.classList.toggle("mob-close");
+}

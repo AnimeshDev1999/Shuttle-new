@@ -57,6 +57,7 @@ Default: 9px
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 li {
@@ -115,6 +116,11 @@ li {
 }
 
 .social {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
   justify-self: right;
 }
 
@@ -125,18 +131,22 @@ li {
 .sticky .header {
   position: fixed;
   top: 0;
-  padding: 1.2rem;
   bottom: 0;
-  height: 6rem;
   width: 100%;
-  background-color: #fff;
-  z-index: 1000;
+  height: 6rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 6;
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.04);
   background-color: #e6ebee;
 }
 
 .sticky .hero {
-  margin-top: 6.8rem;
+  margin-top: 6rem;
+}
+
+.sticky .logo {
+  margin-top: auto;
 }
 
 /* /////////////////////// */
@@ -175,6 +185,10 @@ li {
   height: 100%;
   font-size: 3rem;
   background-color: rgba(51, 51, 51, 0.24);
+}
+
+#DigitalCLOCK {
+  width: 20rem;
 }
 
 .hero-text-box p {

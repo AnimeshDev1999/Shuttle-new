@@ -1,0 +1,182 @@
+/* /////////////////////// */
+/* HERO SECTION */
+/* /////////////////////// */
+
+@media (max-width: 67em) {
+  html {
+    font-size: 9px;
+  }
+
+  .abt-logo {
+    width: 70%;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 8px;
+  }
+
+  .header {
+    font-size: 0.8rem;
+  }
+
+  .abt-logo {
+    width: 80%;
+  }
+
+  .footer {
+    padding: 8rem;
+  }
+}
+
+@media (max-width: 53em) {
+  .social-main {
+    display: none;
+  }
+
+  .main-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 48em) {
+  .blog {
+    padding: 4.8rem 2.4rem;
+    row-gap: 4.8rem;
+  }
+
+  .abt-logo {
+    width: 90%;
+  }
+
+  .footer {
+    padding: 4.8rem;
+  }
+}
+
+@media (max-width: 46em) {
+  .blog {
+    padding: 4.8rem 2.4rem;
+    row-gap: 4.8rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-text-box {
+    width: 20rem;
+    font-size: 2.4rem;
+  }
+
+  #DigitalCLOCK {
+    width: 20rem;
+  }
+
+  .abt-logo {
+    width: 60%;
+  }
+
+  .hero-text-box p {
+    display: none;
+  }
+
+  .abt-container {
+    grid-template-columns: 1fr;
+    margin-bottom: 4.8rem;
+  }
+}
+
+@media (max-width: 38em) {
+  .work-container {
+    padding: 4.8rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .navv {
+    justify-self: right;
+  }
+
+  .main-nav {
+    grid-template-columns: 1fr 5fr;
+  }
+}
+
+@media (max-width: 32em) {
+  .blog {
+    padding: 4.8rem 0rem;
+    row-gap: 4.8rem;
+    grid-template-columns: 1fr;
+  }
+
+  .about {
+    padding: 1.2rem 4.8rem;
+  }
+
+  .work {
+    padding: 1.2rem 4.8rem;
+  }
+
+  .footer {
+    padding: 2.4rem;
+  }
+
+  .main-nav {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .header {
+    padding: 0.8rem;
+  }
+
+  .navv li:first-child {
+    display: none;
+  }
+
+  .sec-nav-container {
+    gap: 2.4rem;
+  }
+}
+
+@media (max-width: 23em) {
+  .sec-nav-container .nav-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .sec-nav-container {
+    gap: 1.6rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.4rem;
+  }
+
+  .abt-logo {
+    width: 80%;
+  }
+
+  .about-text-box,
+  .about-img-box {
+    padding: 2.4rem;
+  }
+
+  .hero-text-box {
+    justify-content: center;
+    align-items: center;
+    width: 18rem;
+    font-size: 2rem;
+  }
+
+  .widget {
+    text-align: center;
+    display: flex;
+    width: 18rem;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-container {
+    gap: 0;
+  }
+}
