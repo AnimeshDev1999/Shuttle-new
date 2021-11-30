@@ -1,4 +1,4 @@
-# Food Place - never cook again
+# Shuttle - where geeks hangout
 
 Shuttle is a space themed/related blog that contains blogs about space via many different writers such as from NASA, ISRO and Space-X etc. The blog was designed and developed in a team of 3 people with the help of Git.
 
